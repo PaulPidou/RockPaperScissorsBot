@@ -1,0 +1,17 @@
+@media screen and (min-height: 600px) {
+    #countDown {margin-top: 10px;}
+    #game {margin-top: 90px;}
+}
+
+@media screen and (max-height: 600px) {
+    #countDown {margin-top: 5px;}
+    #game {margin-top: 20px;}
+}
+
+.opponentColumn {
+    width: 224px;
+    margin: 0 15px;
+}
+
+#vs_img {margin-top: 70px;}
+#play_button {margin-top: 15px;}
