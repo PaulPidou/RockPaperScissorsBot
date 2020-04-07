@@ -1,3 +1,5 @@
+const URL = 'http://www.paul-pidou.name/RockPaperScissorsBot'
+
 let model;
 let playerScore = 0;
 let botScore = 0;
@@ -6,7 +8,7 @@ const webcam = new Webcam(document.getElementById('wc'));
 let isPredicting = false;
 
 async function loadModel(){
-    const MODEL_URL = 'http://127.0.0.1:8887/model/model.json';
+    const MODEL_URL = URL.concat('/model/model.json');
     const model = await tf.loadLayersModel(MODEL_URL);
     //console.log(model.summary());
     return model
