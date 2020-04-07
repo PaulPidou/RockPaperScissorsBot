@@ -160,12 +160,17 @@ function updateScore(result) {
 }
 
 async function init(){
-	await webcam.setup();
-	model = await loadModel();
-	tf.tidy(() => model.predict(webcam.capture()));
+    try {
+        await webcam.setup();
+        model = await loadModel();
+        tf.tidy(() => model.predict(webcam.capture()));
+
+        document.getElementById('play_button').removeAttribute('disabled');
+        document.getElementById('play_button').innerHTML = "Play";
+    } catch(e) {
+        document.getElementById('play_button').innerHTML = "Failed to load the game";
+    }
     
-    document.getElementById('play_button').removeAttribute('disabled');
-    document.getElementById('play_button').innerHTML = "Play";
 }
 
 init();
