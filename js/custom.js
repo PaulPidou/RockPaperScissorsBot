@@ -105,7 +105,8 @@ async function sleep(ms) {
 async function play() {
     const classes = ['rock', 'paper', 'scissors']
     
-    document.getElementById("bot_hand").innerText = "";
+    document.getElementById('play_button').setAttribute('disabled', ');
+    document.getElementById('bot_hand').innerText = "";
     document.getElementById('picture_img').style.display = 'none';
     document.getElementById('wc').style.display = 'block';
     
@@ -136,15 +137,16 @@ async function play() {
     
     await sleep(500);
     
-    const bot_hand_src = document.getElementById('bot_hand_img').getAttribute('src')
-    const bot_hand = bot_hand_src.substring(7, bot_hand_src.length - 6)
+    const bot_hand_src = document.getElementById('bot_hand_img').getAttribute('src');
+    const bot_hand = bot_hand_src.substring(7, bot_hand_src.length - 6);
     
     document.getElementById("prediction").innerText = classes[classId].charAt(0).toUpperCase() + classes[classId].slice(1);;
     document.getElementById("bot_hand").innerText = bot_hand.charAt(0).toUpperCase() + bot_hand.slice(1);
+    document.getElementById('play_button').removeAttribute('disabled');
     
-    const result = getResult(classes[classId], bot_hand)
+    const result = getResult(classes[classId], bot_hand);
     document.getElementById('countDown').innerText = result;
-    updateScore(result)
+    updateScore(result);
 }
 
 function updateScore(result) {
@@ -162,8 +164,8 @@ async function init(){
 	model = await loadModel();
 	tf.tidy(() => model.predict(webcam.capture()));
     
-    document.getElementById("play_button").removeAttribute('disabled')
-    document.getElementById("play_button").innerHTML = "Play";
+    document.getElementById('play_button').removeAttribute('disabled');
+    document.getElementById('play_button').innerHTML = "Play";
 }
 
 init();
