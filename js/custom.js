@@ -105,7 +105,7 @@ async function sleep(ms) {
 async function play() {
     const classes = ['rock', 'paper', 'scissors']
     
-    document.getElementById('play_button').setAttribute('disabled', ');
+    document.getElementById('play_button').setAttribute('disabled', '');
     document.getElementById('bot_hand').innerText = "";
     document.getElementById('picture_img').style.display = 'none';
     document.getElementById('wc').style.display = 'block';
