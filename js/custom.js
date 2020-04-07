@@ -1,4 +1,4 @@
-const URL = 'http://www.paul-pidou.name/RockPaperScissorsBot'
+const URL = 'https://www.paul-pidou.name/RockPaperScissorsBot'
 
 let model;
 let playerScore = 0;
