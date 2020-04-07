@@ -11,7 +11,7 @@ The model used to perform the image classification has been trained with TensorF
 
 ## Use it locally
 
-If you want to use the bot locally, follow this steps:
+If you want to use the bot locally, follow these steps:
 1. Download this repository
 2. Add the [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) extension to Google Chrome
 3. Launch it and choose the directory where you downloaded the repository as the choosen folder
