@@ -7,7 +7,7 @@ As the model is quite heavy it will take a moment to load.
 
 ## TensorFlow model
 
-The model used to power the bot has been trained with TensorFlow and convert to run within the browser thanks to [TensorFlow.js](https://www.tensorflow.org/js). To have more information check this [Kaggle kernel](https://www.kaggle.com/paulpidou/rockpaperscissors-tf-model).
+The model used to perform the image classification has been trained with TensorFlow and convert to run within the browser thanks to [TensorFlow.js](https://www.tensorflow.org/js). To have more information check this [Kaggle kernel](https://www.kaggle.com/paulpidou/rockpaperscissors-tf-model).
 
 ## Use it locally
 
