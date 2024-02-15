@@ -2,7 +2,7 @@
 
 A TensorFlow-based bot to play roshambo with. 
 
-To use it live go to [paul-pidou.name/RockPaperScissorsBot](https://www.paul-pidou.name/RockPaperScissorsBot/).
+To use it live go to [paulpidou.github.io/RockPaperScissorsBot](https://paulpidou.github.io/RockPaperScissorsBot/).
 As the model is quite heavy it will take a moment to load.
 
 ## TensorFlow model
